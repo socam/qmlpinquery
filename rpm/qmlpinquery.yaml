@@ -1,0 +1,32 @@
+Name: qmlpinquery
+Summary: QML based PIN query application using ofono-qt
+Version: 0.1.1
+Release: 1
+Group: Applications/Communications
+License:  BSD
+URL: https://github.com/nemomobile/qmlpinquery
+Sources:  
+     - "%{name}-%{version}.tar.bz2"
+Provides:
+    - meego-pinquery > 0.0.2
+Obsoletes:
+    - meego-pinquery <= 0.0.2
+ExtraSources:
+     - qmlpinquery.service;%{_libdir}/systemd/user/
+Description: QML PIN query dialog
+
+PkgConfigBR:  
+     - qdeclarative-boostable
+     - QtCore >= 4.7.0  
+     - QtGui
+     - QtDBus
+     - QtDeclarative
+     - ofono-qt >= 0.53
+Requires : 
+     - qt-components
+Configure: none  
+Builder: qmake    
+Files:  
+     - "%{_bindir}/qmlpinquery"
+     - "%{_libdir}/duicontrolpanel/qmlpinqueryapplet.desktop"
+     - "%{_libdir}/systemd/user/qmlpinquery.service"

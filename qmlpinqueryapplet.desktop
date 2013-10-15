@@ -1,0 +1,28 @@
+[Desktop Entry]
+Type=ControlPanelApplet
+Name=Enter PIN
+X-logical-id=qtn_prod_qmlpingquery
+X-Maemo-Service=com.nokia.DuiControlPanel
+X-Maemo-Method=com.nokia.DuiControlPanelIf.appletPage
+X-Maemo-Object-Path=/
+X-Maemo-Fixed-Args=qmlpinquery
+
+[DUI]
+X-DUIApplet-ApplicationCommand=/usr/bin/qmlpinquery
+
+[DCP]
+Category=pinquery
+Order=1
+WidgetType=Button
+
+
+
+
+
+
+
+
+
+
+
+
